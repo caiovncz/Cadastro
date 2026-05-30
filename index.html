@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header> <!--Cabecalho da pagina web-->
+        <h1>Pagina de login</h1>
+    </header>
+
+    <main> <!-- Conteudo da wagina web-->
+        <form action="#" method="post">
+
+            <!-- COLETA DE DADOS PESSOAIS -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade">
+
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" id="nascimento". name="nascimento">
+
+            </fieldset>
+            
+            <!-- FORMACAO ACADEMICA -->
+
+            <fieldset>
+                <legend>Escolaridade</legend>
+
+                <label for="formacao">Nivel de formacao:</label>
+                <select id="formacao" name="formacao">
+                    <option value="">Selecione...</option>
+                    <option value="fundamental">Ensino fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior">Ensino Superior</option>
+                    <option value="pos">Pos-Graduacao</option>
+                </select>
+
+            </fieldset>
+            
+            <!-- PREFERENCIAS -->
+
+            <fieldset>
+                <legend>Preferencias</legend>
+
+                <p>Curso Disponiveis</p>
+                <label><input type="radio" name="curso" value="web"> Desenvolvimento Web</label>
+                <label><input type="radio" name="curso" value="dados"> Ciencia de Dados</label>
+                <label><input type="radio" name="curso" value="mobile"> Desenvolvimento Mobile</label>
+
+                <p>Turno Disponiveis</p>
+                <label><input type="radio" name="turno" value="manha"> Manha</label>
+                <label><input type="radio" name="turno" value="Tarde"> Tarde</label>
+                <label><input type="radio" name="turno" value="Noite"> Noite</label>
+
+                <p>Notificacoes:</p>
+                <label><input type="checkbox" name="email_notif" value="sim"> Receber e-mails sobre o curso</label>
+                <label><input type="checkbox" name="novidades" value="sim"> Receber novidades e promocoes</label>
+
+            </fieldset>
+            
+            <button type="submit">Enviar inscricao</button>
+            
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 - Página de Inscrição. | Desenvolvido por caio</p>
+    </footer>
+
+</body>
+</html>
